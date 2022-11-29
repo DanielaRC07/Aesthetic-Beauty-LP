@@ -1,0 +1,65 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
+
+body {
+    background-image: url(../css/img/rosse.jpg);
+    background-attachment: fixed;
+	background-size:cover;
+	margin: 0;
+}
+
+.contenedor-principal {
+    box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+	text-align: center;
+	border-radius: 5px;
+	margin: 3em auto;
+	background: rgba(255, 255, 255, 0.95);
+	height: 300px;
+	width: 480px;
+	padding: 1em;
+	
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;	
+}
+
+.contenedor-principal h1 {
+    background: url(../css/img/rosse.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Playfair Display', serif;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	letter-spacing: 2px;
+	font-size: 3.5em;
+	margin: 0;
+}
+
+.contenedor-principal h3 {
+    font-family: 'Farsan';
+	margin: 3px 0 1.5em 0;
+	font-size: 1.3em;
+	color: black;
+}
+
+.contenedor-principal button {
+	background-image: linear-gradient(to left, rgba(146, 233, 255, 0.75) 0%, rgba(255, 161, 242, 0.918) 100%);
+	box-shadow: 0 9px 25px -5px #edb1b7;
+	font-family: 'Abel', sans-serif;
+	padding: 0.5em 1.9em;
+	margin: 2.3em 0 0 0;
+	border-radius: 7px;
+	font-size: 1.4em;
+	cursor: pointer;
+	color: black;
+	font-size: 1em;
+	outline: none;
+	border: none;
+	transition: 0.3s linear;
+
+}
+.contenedor-principal button:hover{transform: translatey(2px);}
+.contenedor-principal button:active{transform: translatey(5px);}

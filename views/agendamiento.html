@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/agendamiento.css">
+    <title>Agendamiento</title>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <div>
+            <form action="agendar" method="post">
+                <div>
+                    <h1>Agenda tu Cita!</h1>
+                    <h3>Bienvenido, ingresa los siguientes datos para agendar tu cita en nuestra estetica de belleza: </h3>
+                </div>
+                <div>
+                    <div>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" min="2022-11-01" max="2022-12-31" >
+                    </div>
+
+                    <div>
+                    <label for="appt-time">
+                        Elija una hora entre 08:00 am a 18:00 pm
+                    </label>
+                    <input id="hora" type="time" name="hora" min="08:00" max="18:00" required />
+                    <span class="validity"></span>
+                    </div> 
+                </div>
+                <div>
+                    <button type="submit" title="agendar" name="Agendar">Agendar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
