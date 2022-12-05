@@ -88,3 +88,10 @@ footer p {
     color: #000000;
 
 }
+
+#iconos i{
+    font-size:26px;
+    padding: 0 8px;
+    text-align: center;
+}
+
