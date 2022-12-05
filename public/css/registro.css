@@ -77,3 +77,14 @@ button:hover{
         border-radius: 2%;
     }
 }
+
+footer{
+    background-color:#edb1b7 ;
+    min-height: 100px;
+}
+footer p {
+    color: rgb(7, 7, 7);
+    text-align: center;
+    color: #000000;
+
+}
