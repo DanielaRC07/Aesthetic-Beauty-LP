@@ -1,0 +1,31 @@
+body {
+    background-image: url(../css/img/moñito.png);
+    background-attachment: fixed;
+	background-size:cover;
+	margin: 0;
+}
+
+.button-consulta button {
+	background-image: linear-gradient(to left, rgba(146, 233, 255, 0.75) 0%, rgba(255, 161, 242, 0.918) 100%);
+	box-shadow: 0 9px 25px -5px #edb1b7;
+	font-family: 'Abel', sans-serif;
+	padding: 0.5em 1.9em;
+	margin: 2.3em 0 0 0;
+	border-radius: 7px;
+	font-size: 1.4em;
+	cursor: pointer;
+	color: black;
+	font-size: 1em;
+	outline: none;
+	border: none;
+	transition: 0.3s linear;
+
+}
+.contenedor-principal button:hover{transform: translatey(2px);}
+.contenedor-principal button:active{transform: translatey(5px);}
+
+#consultar {
+    position: fixed;
+	width: 100%;
+    padding: 200px;
+}

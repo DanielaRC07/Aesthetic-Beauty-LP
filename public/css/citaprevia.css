@@ -1,3 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: white;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contenedor {
+    width: 100%;
+    padding: 15px;
+    border: 3px solid #edb1b7;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #32b3aa;
+    font-size: 35px;
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: #32b3aa;
+}
+
+#form{
+    margin: auto;
+    width: 500px;
+    margin-top: 200px;
+    border-radius: 2%;
+}
+
+.chitito {
+    text-align: center;
+    font-size: 20px;
+}
+
 a{
     text-decoration: none;
 }
@@ -14,10 +53,9 @@ a{
     width: 100px;
     height: 100x;
 }
-.typewriter{
+#typewriter{
     font-family: 'Abel', sans-serif;
 }
-
 .card {
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.25);
     cursor: pointer;
@@ -39,13 +77,13 @@ a{
 }
 
 footer{
-    background-color:#edb1b7 ;
+    background-color:#edb1b7;
     min-height: 100px;
 }
 footer p {
-    color: rgb(7, 7, 7);
+    color: black;
     text-align: center;
-    color: #000000;
+    color: black;
 
 }
 #iconos i{
@@ -53,24 +91,3 @@ footer p {
     padding: 0 8px;
     text-align: center;
 }
-
-.button-enviar button {
-	background-image: linear-gradient(to left, rgba(146, 233, 255, 0.75) 0%, rgba(255, 161, 242, 0.918) 100%);
-	box-shadow: 0 9px 25px -5px #edb1b7;
-	font-family: 'Abel', sans-serif;
-	padding: 0.5em 1.9em;
-	margin: 1.3em 0 0 0;
-	border-radius: 7px;
-	font-size: 1.4em;
-	cursor: pointer;
-	color: black;
-	font-size: 1em;
-	outline: none;
-	border: none;
-	transition: 0.3s linear;
-    width:635px;
-    height:40px;
-
-}
-.contenedor-principal button:hover{transform: translatey(2px);}
-.contenedor-principal button:active{transform: translatey(5px);}
