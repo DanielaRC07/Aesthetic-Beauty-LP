@@ -1,11 +1,26 @@
 /* fonts  */
 @import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
 
+#contenedor-inicial{
+    background-color: #edb1b7;
+}
+
+#navbarSupportedContent{
+    letter-spacing: 0;
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+}
+
 body {
     background-image: url(../css/img/rosse.jpg);
     background-attachment: fixed;
 	background-size:cover;
 	margin: 0;
+}
+
+.logo{
+    width: 80px;
+    height: 80x;
 }
 
 .contenedor-principal {
@@ -14,11 +29,10 @@ body {
 	border-radius: 5px;
 	margin: 3em auto;
 	background: rgba(255, 255, 255, 0.95);
-	height: 300px;
+	height: 335px;
 	width: 480px;
 	padding: 1em;
 	
-	position: fixed;
 	bottom: 0;
 	right: 0;
 	left: 0;
@@ -45,6 +59,21 @@ body {
 	color: black;
 }
 
+footer{
+    background-color:#edb1b7 ;
+    min-height: 100px;
+}
+footer p {
+    color: rgb(7, 7, 7);
+    text-align: center;
+    color: #000000;
+}
+
+#iconos i{
+    font-size:26px;
+    padding: 0 8px;
+    text-align: center;
+}
 .contenedor-principal button {
 	background-image: linear-gradient(to left, rgba(146, 233, 255, 0.75) 0%, rgba(255, 161, 242, 0.918) 100%);
 	box-shadow: 0 9px 25px -5px #edb1b7;

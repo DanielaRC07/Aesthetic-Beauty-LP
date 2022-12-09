@@ -1,8 +1,23 @@
 body {
-    background-image: url(../css/img/consulta.png);
+    background-image: url(../css/img/consultacita.png);
     background-attachment: fixed;
 	background-size:cover;
 	margin: 0;
+	
+}
+#contenedor-inicial{
+    background-color: #edb1b7;
+}
+
+#navbarSupportedContent{
+    letter-spacing: 0;
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+}
+
+.logo{
+    width: 70px;
+    height: 70x;
 }
 
 .button-consulta button {
@@ -28,4 +43,20 @@ body {
     position: fixed;
 	width: 100%;
     padding: 200px;
+}
+
+footer{
+    background-color:#edb1b7;
+    min-height: 100px;
+}
+footer p {
+    color: rgb(7, 7, 7);
+    text-align: center;
+    color: #000000;
+}
+
+#iconos i{
+    font-size:26px;
+    padding: 0 8px;
+    text-align: center;
 }

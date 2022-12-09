@@ -6,6 +6,20 @@ body {
 
     margin: 0;
 }
+#contenedor-inicial{
+    background-color: #edb1b7;
+}
+
+#navbarSupportedContent{
+    letter-spacing: 0;
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+}
+
+.logo{
+    width: 100px;
+    height: 100x;
+}
 
 #contenedor {
     display: flex;
@@ -201,4 +215,20 @@ hr {
     #login label {
         text-align: left;
     }
+}
+
+footer{
+    background-color:#edb1b7 ;
+    min-height: 100px;
+}
+footer p {
+    color: rgb(7, 7, 7);
+    text-align: center;
+    color: #000000;
+}
+
+#iconos i{
+    font-size:26px;
+    padding: 0 8px;
+    text-align: center;
 }
