@@ -5,7 +5,7 @@ router.get("/", (req, res) => {
   res.render("index");
 });
 
-router.get("/Home", (req, res) => {
+router.get("/index", (req, res) => {
   res.render("index");
 });
 
