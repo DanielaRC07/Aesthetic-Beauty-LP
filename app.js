@@ -1,19 +1,18 @@
-const express=require('express')
-const app=express()
-const path=require('path')
-const cors=require('cors')
-const rutas=require('./routes/site')
+const express = require("express");
+const app = express();
+const cors = require("cors");
+const path = require("path");
+const rutas = require("./routes");
 
-app.set('port',3001)
-app.set('views',path.join(__dirname,'views'))
-app.set('view engine','ejs')
+app.set("port", 3001);
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
 
-app.use('/',rutas)
-app.use(express.static(path.join(__dirname,'public')))
-app.use(cors())
+app.use("/", rutas);
+app.use("/public", express.static("public"));
+app.use(cors());
 
-app.listen(app.get('port'),()=>{
-	console.log('WebSite Escuchando por el puerto', app.get('port'))
-	console.log(__dirname)
-
-})
+app.listen(app.get("port"), () => {
+  console.log("WebSite Escuchando por el puerto", app.get("port"));
+  console.log(__dirname);
+});
