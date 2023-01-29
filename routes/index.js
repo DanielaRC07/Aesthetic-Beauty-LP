@@ -13,7 +13,7 @@ router.get("/registro", (req, res) => {
   res.render("registro");
 });
 
-router.get("/MySide", (req, res) => {
+router.get("/login", (req, res) => {
   res.render("login");
 });
 
