@@ -17,7 +17,7 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
-router.get("/Ver", (req, res) => {
+router.get("/consulta", (req, res) => {
   res.render("consulta");
 });
 
