@@ -1,0 +1,18 @@
+version: '3'
+ 
+services:
+  aesthetic_db:
+    image: mysql:5.7
+    container_name: aesthetic_db
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: lp
+      MYSQL_USER: daniela
+      MYSQL_PASSWORD: secret
+    ports:
+      - "3307:3306"
+    volumes:
+      - aesthetic_data:/var/lib/mysql
+
+volumes:
+  aesthetic_data:
