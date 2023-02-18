@@ -32,11 +32,11 @@ body {
 	height: 335px;
 	width: 480px;
 	padding: 1em;
-	
+
 	bottom: 0;
 	right: 0;
 	left: 0;
-	top: 0;	
+	top: 0;
 }
 
 .contenedor-principal h1 {
@@ -57,16 +57,6 @@ body {
 	margin: 3px 0 1.5em 0;
 	font-size: 1.3em;
 	color: black;
-}
-
-footer{
-    background-color:#edb1b7 ;
-    min-height: 100px;
-}
-footer p {
-    color: rgb(7, 7, 7);
-    text-align: center;
-    color: #000000;
 }
 
 #iconos i{

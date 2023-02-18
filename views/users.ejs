@@ -1,0 +1,17 @@
+<%- include('./partials/header'); %>
+<body>
+    <%- include('./partials/nav'); %>
+    <div class="contenedor-principal">
+	<h1>Listado de usuarios</h1>
+	<ul>
+	<% users.forEach(function(user) { %>
+		<li>
+		<%= user.id %>. <%= user.name %>
+		</li>
+	<% }); %>
+	</ul>
+    </div>
+
+<%- include('./partials/footer'); %>
+</body>
+</html>

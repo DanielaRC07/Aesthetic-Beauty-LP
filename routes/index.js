@@ -26,11 +26,10 @@ router.get("/users", (req, res) => {
   connection.query("SELECT id, name FROM users", function (error, results) {
     if (error) throw error
 
-    console.log(results)
-    res.json(results)
+    res.render("users", { users: results });
   })
 });
-router.get("/users/:userId", (req, res) => {
+router.get("/api/v1/users/:userId", (req, res) => {
   const query = "SELECT id, name FROM users WHERE id = ?"
   connection.query(query, req.params.userId, function (error, results) {
     if (error) throw error
@@ -41,7 +40,7 @@ router.get("/users/:userId", (req, res) => {
     res.status(204).send();
   })
 });
-router.post("/users", (req, res, next) => {
+router.post("/api/v1/users", (req, res) => {
   const query = "INSERT INTO users SET name = ?"
   connection.query(query, req.body.name, function (error, results) {
     if (error) throw error
@@ -49,7 +48,7 @@ router.post("/users", (req, res, next) => {
     res.status(201).send()
   })
 });
-router.put("/users/:userId", (req, res, next) => {
+router.put("/api/v1/users/:userId", (req, res) => {
   const query = "UPDATE users SET name = ? WHERE id = ?"
   connection.query(query, [req.body.name, req.params.userId], function (error, results) {
     if (error) throw error
