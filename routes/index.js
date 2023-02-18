@@ -30,5 +30,16 @@ router.get("/users", (req, res) => {
     res.json(results)
   })
 });
+router.get("/users/:userId", (req, res) => {
+  const query = "SELECT id, name FROM users WHERE id = ?"
+  connection.query(query, req.params.userId, function (error, results) {
+    if (error) throw error
+
+    if (results.length) {
+      res.json(results[0])
+    }
+    res.status(204).send();
+  })
+});
 
 module.exports = router;
