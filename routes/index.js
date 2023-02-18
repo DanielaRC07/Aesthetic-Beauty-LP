@@ -49,5 +49,13 @@ router.post("/users", (req, res, next) => {
     res.status(201).send()
   })
 });
+router.put("/users/:userId", (req, res, next) => {
+  const query = "UPDATE users SET name = ? WHERE id = ?"
+  connection.query(query, [req.body.name, req.params.userId], function (error, results) {
+    if (error) throw error
+
+    res.status(200).send()
+  })
+});
 
 module.exports = router;
