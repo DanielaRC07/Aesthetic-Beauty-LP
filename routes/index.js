@@ -41,5 +41,13 @@ router.get("/users/:userId", (req, res) => {
     res.status(204).send();
   })
 });
+router.post("/users", (req, res, next) => {
+  const query = "INSERT INTO users SET name = ?"
+  connection.query(query, req.body.name, function (error, results) {
+    if (error) throw error
+
+    res.status(201).send()
+  })
+});
 
 module.exports = router;
