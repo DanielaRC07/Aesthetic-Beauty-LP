@@ -1,0 +1,21 @@
+body {
+    font-family: 'Overpass', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    color: #b2e2f2;
+
+    margin: 0;
+}
+
+footer{
+    background-color:#edb1b7 ;
+    bottom: 0;
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+footer p {
+    color: rgb(7, 7, 7);
+    text-align: center;
+    color: #000000;
+}

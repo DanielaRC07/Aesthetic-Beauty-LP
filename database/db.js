@@ -1,17 +1,16 @@
-const mysql      = require('mysql');
-module.exports = connection;
+const mysql = require("mysql");
 const connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'daniela',
-  password : 'secret',
-  database : 'lp'
+  host: "localhost",
+  user: "daniela",
+  password: "secret",
+  database: "lp",
+  port: 3307
 });
 
-connection.connect();
-
-connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
-  if (err) throw err;
-  console.log('The solution is: ', rows[0].solution);
+connection.connect((error) => {
+  if (error) {
+    console.log("el error en bd" + error);
+  }
+  console.log("Conexion con bd es exitosa");
 });
-
-connection.end();
+module.exports = connection;
